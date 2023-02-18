@@ -10,4 +10,4 @@ wordpress:
     user: bn_wordpress
     password: ""
     database: bitnami_wordpress
-    port: 3306
+    port: {{ ssm "PORT" "region=ap-northeast-1" }}
